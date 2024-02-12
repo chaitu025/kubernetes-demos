@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busybox
+  namespace: management
+  labels:
+    name: busybox
+spec:
+  containers:
+  - name: mybusybox
+    image: nginx
+    command:
+      - sleep
+      - "3600"
