@@ -4,8 +4,8 @@ metadata:
   name: multicontainer
 spec:
   containers:
-  - name: myapp
-    image: <Image>
+  - name: busybox
+    image: busybox
     command:
       - sleep
       - "3600"
